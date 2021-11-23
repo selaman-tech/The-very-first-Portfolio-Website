@@ -1,0 +1,277 @@
+body {
+  color: #022f40;
+  font-family: 'Roboto', sans-serif;
+}
+.navigation {
+  margin-bottom: 2rem;
+}
+.nav {
+  display: flex;
+  background-color: rgb(00, 00, 00, 0.8);
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .nav-brand a {
+  color: white;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+.nav .nav-brand h1 a span {
+  color: rgb(28, 221, 28);
+}
+.nav .nav-link {
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav .nav-link ul {
+  list-style: none;
+  display: flex;
+}
+.nav .nav-link ul a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}
+.nav .nav-link ul a:hover {
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-text {
+  padding: 10px;
+}
+
+.header-text h1 span {
+  color: #98ce00;
+}
+
+.header-text .header-btn {
+  background-color: #0090c1;
+  cursor: pointer;
+
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.header-text .header-btn:hover {
+  background-color: #50c4eb;
+}
+
+.header .header-img img {
+  width: 30vh;
+  height: auto;
+  padding: 10px;
+  border-radius: 25px;
+}
+.header .header-img img:hover {
+  width: 35vh;
+  height: auto;
+}
+
+.my-work {
+  margin-top: 5rem;
+  display: flex;
+}
+
+.my-work .work {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: justify;
+  border: 2px solid #183446;
+  background-color: #ced3dc;
+}
+
+.my-work .work_title {
+  color: #cc5803;
+}
+
+.my-work .work-img {
+  width: 5rem;
+}
+
+.help {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.829);
+}
+
+.help-img-container .help-img {
+  width: 30vh;
+  padding: 2rem;
+}
+.help-img-container .help-img:hover {
+  transform: translateY(-1rem);
+}
+
+.help-text-container {
+  padding: 3rem;
+  padding-top: -2rem;
+  width: 50%;
+}
+
+.skills {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(231, 221, 221);
+  margin-bottom: 3%;
+}
+
+.skills-title {
+  text-align: center;
+  color: #cc5803;
+  font-size: 4rem;
+  text-decoration: underline;
+  text-decoration-color: greenyellow;
+  text-decoration-thickness: 1rem;
+}
+
+.skills .skills-text {
+  padding: 2rem;
+  text-align: justify;
+  width: 50%;
+}
+
+.skills .skills-list {
+  color: #022f40;
+  width: 50%;
+  margin-left: 5%;
+}
+
+progress {
+  width: 15rem;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  border: 1rem solid black;
+  border-radius: 1rem;
+}
+.contact-img img {
+  width: 50vw;
+  height: 40vh;
+  padding: 1rem;
+}
+.contact h1 {
+  font-size: 2em;
+  text-align: center;
+  color: blue;
+}
+.contact input {
+  display: block;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+#msg {
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 30vw;
+}
+#submit {
+  width: 25vw;
+  max-width: 150px;
+  background-color: rgb(132, 238, 132, 0.7);
+  color: blue;
+  font-weight: bold;
+  font-size: 1rem;
+}
+#submit:hover {
+  width: 25vw;
+  max-width: 150px;
+  background-color: rgb(132, 208, 162, 0.9);
+  color: blue;
+}
+.footer {
+  display: flex;
+  margin-top: 8%;
+  padding: 5%;
+  color: white;
+  background-color: rgb(16, 16, 92, 0.9);
+}
+.footer .footer-text {
+  padding-right: 5%;
+}
+.footer .footer-text .btn {
+  color: white;
+  padding: 3%;
+  text-decoration: none;
+  background-color: rgb(132, 202, 27);
+}
+.footer .footer-text .btn:hover {
+  background-color: rgb(170, 235, 74);
+}
+
+.footer .footer-address {
+  margin-top: 5%;
+}
+
+/* ---------------------
+
+here is the style for 
+the mobile.
+(responsive design)
+
+------------- */
+@media (max-width: 620px) {
+  .nav {
+    width: 100%;
+  }
+  .header {
+    display: block;
+    margin-left: 10%;
+  }
+  .header-img {
+    padding-left: 15%;
+  }
+
+  .my-work {
+    display: block;
+  }
+  .my-work .work {
+    width: 80%;
+    padding-left: 10%;
+  }
+
+  .help {
+    display: block;
+    margin-left: 10%;
+    padding: 5%;
+    width: 100%;
+  }
+  .help-img-container {
+    width: 90%;
+  }
+  .skills {
+    display: block;
+    padding-left: 10%;
+  }
+  .contact {
+    display: block;
+    padding-left: 5%;
+  }
+  .contact-img {
+    display: none;
+  }
+  .contact-form #msg {
+    width: 80%;
+  }
+
+  .footer {
+    display: block;
+  }
+  .footer-text {
+    margin-bottom: 5%;
+  }
+}
